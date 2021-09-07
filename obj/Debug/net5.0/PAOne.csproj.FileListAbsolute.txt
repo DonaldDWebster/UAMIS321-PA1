@@ -1,0 +1,16 @@
+C:\Users\donal\codingstuff\source\repos\MIS321\PAOne\bin\Debug\net5.0\PAOne.exe
+C:\Users\donal\codingstuff\source\repos\MIS321\PAOne\bin\Debug\net5.0\PAOne.deps.json
+C:\Users\donal\codingstuff\source\repos\MIS321\PAOne\bin\Debug\net5.0\PAOne.runtimeconfig.json
+C:\Users\donal\codingstuff\source\repos\MIS321\PAOne\bin\Debug\net5.0\PAOne.runtimeconfig.dev.json
+C:\Users\donal\codingstuff\source\repos\MIS321\PAOne\bin\Debug\net5.0\PAOne.dll
+C:\Users\donal\codingstuff\source\repos\MIS321\PAOne\bin\Debug\net5.0\ref\PAOne.dll
+C:\Users\donal\codingstuff\source\repos\MIS321\PAOne\bin\Debug\net5.0\PAOne.pdb
+C:\Users\donal\codingstuff\source\repos\MIS321\PAOne\obj\Debug\net5.0\PAOne.csproj.AssemblyReference.cache
+C:\Users\donal\codingstuff\source\repos\MIS321\PAOne\obj\Debug\net5.0\PAOne.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\donal\codingstuff\source\repos\MIS321\PAOne\obj\Debug\net5.0\PAOne.AssemblyInfoInputs.cache
+C:\Users\donal\codingstuff\source\repos\MIS321\PAOne\obj\Debug\net5.0\PAOne.AssemblyInfo.cs
+C:\Users\donal\codingstuff\source\repos\MIS321\PAOne\obj\Debug\net5.0\PAOne.csproj.CoreCompileInputs.cache
+C:\Users\donal\codingstuff\source\repos\MIS321\PAOne\obj\Debug\net5.0\PAOne.dll
+C:\Users\donal\codingstuff\source\repos\MIS321\PAOne\obj\Debug\net5.0\ref\PAOne.dll
+C:\Users\donal\codingstuff\source\repos\MIS321\PAOne\obj\Debug\net5.0\PAOne.pdb
+C:\Users\donal\codingstuff\source\repos\MIS321\PAOne\obj\Debug\net5.0\PAOne.genruntimeconfig.cache
