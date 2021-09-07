@@ -10,6 +10,7 @@ namespace PAOne
         {
             bool continueProgram = true;
 
+            //the while loop exists so that the user will be prompted continously by the menu until the user decided to exit
             while(continueProgram)
             {
 
@@ -20,6 +21,8 @@ namespace PAOne
                 Console.WriteLine("\t Type 'delete' to delete an old post");
                 Console.WriteLine("\t Type 'exit' to exit this program");
 
+
+                //detects the user input and executed a method based on the input
                 string input = Console.ReadLine();
                 if( input != "show" && input != "add" && input != "delete" && input != "exit")
                 {
@@ -45,7 +48,7 @@ namespace PAOne
             }   
         }
             
-
+        //displays all Posts stored in the posts.txt file
         static void PrintAllPosts()
         {
             Console.WriteLine( "Here our the current stored Posts of Big Al: \n \n");
@@ -58,9 +61,10 @@ namespace PAOne
             Console.ReadKey();
         }    
 
+        //adds a post object to the .txt file
         static void AddPost()
         {
-            //I will need to create a writePosts file
+            //I read the posts.txt file into an Arrry list, edit the array list, and then save the edited array list
             List<Post> tempPosts = PostFile.ReadPosts();
 
             
@@ -70,6 +74,7 @@ namespace PAOne
             Console.WriteLine("Please input the post Text: \n");
             string userInputText= Console.ReadLine();
 
+            //I detect the current time of the program witht his code
             Console.WriteLine("\n The Timestamp will be taken from the current moment;\n");
             DateTime now = DateTime.Now;
             long unixTime = ((DateTimeOffset)now).ToUnixTimeSeconds();
@@ -87,8 +92,11 @@ namespace PAOne
         }       
 
 
+
         static void DeletePost()
         {
+            //I read the posts.txt file into an Arrry list, edit the array list, and then save the edited array list
+
             Console.Clear();
             Console.WriteLine("Here our the current Posts:");
 

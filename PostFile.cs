@@ -6,8 +6,8 @@ namespace PAOne
 {
     public class PostFile
     {
-        //I need to load the .txt file to an array list
 
+        // read the .txt file into a List of Posts
         public static List<Post> ReadPosts()
         {
                List<Post> allPosts = new List <Post>();
@@ -20,11 +20,11 @@ namespace PAOne
                 }
                 catch (FileNotFoundException e)
                 {
-                    System.Console.WriteLine("Error encounted.", e);
-                    return;
+                    System.Console.WriteLine("\n Error encounted.", e);
+                    
                 }
 
-                //What do they mean? Program should work if nothing is return???? ANSWER THIS LATER 
+                
 
                 string line = infile.ReadLine(); //priming read
                 
@@ -44,6 +44,7 @@ namespace PAOne
                 return allPosts;
         }    
 
+        //writes an array list of posts into the posts.txt file
         public static void WritePosts(List <Post> tempPosts )
         {
                 StreamWriter inFile= new StreamWriter("Posts.txt");
