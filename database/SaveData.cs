@@ -18,12 +18,12 @@ namespace UAMIS321_PA3.database
             using var con = new MySqlConnection(cs);
             con.Open();
 
-            string stm =@"UPDATE books set title = @title, author = @author, WHERE id = @id";
+            string stm =@"UPDATE books set Title = @Title, author = @author WHERE id = @id";
 
             using var cmd = new MySqlCommand(stm, con);
             cmd.Parameters.AddWithValue("@id",value.PostID);
-            cmd.Parameters.AddWithValue("@id",value.PostText);
-           // cmd.Parameters.AddWithValue("@id",value.TimeStamp);
+            cmd.Parameters.AddWithValue("@author",value.PostText);
+            cmd.Parameters.AddWithValue("@Title",value.PostText);
            cmd.Prepare();
            cmd.ExecuteNonQuery();
         }
