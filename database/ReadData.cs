@@ -17,7 +17,7 @@ namespace UAMIS321_PA3.database
             using var con = new MySqlConnection(cs);
             con.Open();
 
-            string stm = "SELECT * FROM posts";
+            string stm = "SELECT * FROM posts order by TimeStamp desc";
             using var cmd = new MySqlCommand(stm, con);
 
             using MySqlDataReader rdr = cmd.ExecuteReader();

@@ -24,8 +24,8 @@ namespace UAMIS321_PA3.database
             cmd.Parameters.AddWithValue("@PostID",value.PostID);
             cmd.Parameters.AddWithValue("@TimeStamp",value.TimeStamp);
             cmd.Parameters.AddWithValue("@PostText",value.PostText);
-           cmd.Prepare();
-           cmd.ExecuteNonQuery();
+            cmd.Prepare();
+            cmd.ExecuteNonQuery();
         }
 
         public void SeedData()
