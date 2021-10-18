@@ -6,7 +6,6 @@ using System.Data;
 using MySql.Data;
 using MySql.Data.MySqlClient;
 using UAMIS321_PA3.Models;
-
 using UAMIS321_PA3.Interfaces;
 
 namespace UAMIS321_PA3
@@ -15,55 +14,73 @@ namespace UAMIS321_PA3
     {
         static void Main(string[] args)
         {
-            System.Console.WriteLine("Hello World");
+            System.Console.WriteLine("God Save the Emperor");
             // DeletePost.DropPostTable();
             // SavePost.CreatePostTable();
 
-            Post myPost= new Post() {PostText="Industrial Society and its Consequences" , PostID= 110010};
-            myPost.Save.createPost(myPost);
+           // Post myPost= new Post() {PostText="Industrial Society and its Consequences" , PostID= 110010};
+           // myPost.Save.createPost(myPost);
+
+                SaveData newSaveData = new SaveData();
+                newSaveData.SeedData();
+
+                IReadAllData readObject = new ReadData();
+                List<Post> allPosts = readObject.GetAllPosts();
+                
+                foreach(Post post in allPosts)
+                {
+                    Console.WriteLine(post.ToString() );
+                }
+
+                allPosts[0].PostID= 69 ;
+                newSaveData.SaveDataMethod(allPosts[0]);
+
+                Console.WriteLine("After the update");
+                foreach(Post post in allPosts)
+                {
+                    Console.WriteLine(post.ToString() );
+                }
+                        //     bool continueProgram = true;
+
+        //     //the while loop exists so that the user will be prompted continously by the menu until the user decided to exit
+        //     while(continueProgram)
+        //     {
+
+        //         Console.Clear();
+        //         Console.WriteLine("Hello! Please follow the instructions below:");
+        //         Console.WriteLine("\t Type 'show' to show all stored posts");
+        //         Console.WriteLine("\t Type 'add' to add a new post");
+        //         Console.WriteLine("\t Type 'delete' to delete an old post");
+        //         Console.WriteLine("\t Type 'exit' to exit this program");
 
 
-            // bool continueProgram = true;
+        //         //detects the user input and executed a method based on the input
+        //         string input = Console.ReadLine();
+        //         if( input != "show" && input != "add" && input != "delete" && input != "exit")
+        //         {
+        //             Console.WriteLine("error please try again");
+        //         }
+        //         else if( input =="show")
+        //         {
+        //             PrintAllPosts();    
+        //         }
+        //         else if( input =="add")
+        //         {
+        //             AddPost();
+        //         }
+        //         else if( input =="delete")
+        //         {
+        //             DeletePost();
+        //         }
+        //         else if( input =="exit")
+        //         {
+        //              continueProgram= false;
+        //          }
 
-            // //the while loop exists so that the user will be prompted continously by the menu until the user decided to exit
-            // while(continueProgram)
-            // {
-
-            //     Console.Clear();
-            //     Console.WriteLine("Hello! Please follow the instructions below:");
-            //     Console.WriteLine("\t Type 'show' to show all stored posts");
-            //     Console.WriteLine("\t Type 'add' to add a new post");
-            //     Console.WriteLine("\t Type 'delete' to delete an old post");
-            //     Console.WriteLine("\t Type 'exit' to exit this program");
-
-
-            //     //detects the user input and executed a method based on the input
-            //     string input = Console.ReadLine();
-            //     if( input != "show" && input != "add" && input != "delete" && input != "exit")
-            //     {
-            //         Console.WriteLine("error please try again");
-            //     }
-            //     else if( input ="show")
-            //     {
-            //         PrintAllPosts();    
-            //     }
-            //     else if( input =="add")
-            //     {
-            //         AddPost();
-            //     }
-            //     else if( input =="delete")
-            //     {
-            //         DeletePost();
-            //     }
-            //     else if( input =="exit")
-            //     {
-             //         continueProgram= false;
-             //     }
-
-            // }   
+        //     }   
         // }
             
-        //displays all Posts stored in the posts.txt file
+        //   // displays all Posts stored in the posts.txt file
         // static void PrintAllPosts()
         // {
         //     Console.WriteLine( "Here our the current stored Posts of Big Al: \n \n");
@@ -156,5 +173,7 @@ namespace UAMIS321_PA3
         //         Console.ReadKey();
         //     }
         }
+
+      
     }
 }

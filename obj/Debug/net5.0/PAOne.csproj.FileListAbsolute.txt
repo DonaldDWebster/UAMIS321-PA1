@@ -50,3 +50,8 @@ C:\Users\donal\codingstuff\source\repos\MIS321\UAMIS321-PA3\bin\Debug\net5.0\run
 C:\Users\donal\codingstuff\source\repos\MIS321\UAMIS321-PA3\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Users\donal\codingstuff\source\repos\MIS321\UAMIS321-PA3\obj\Debug\net5.0\PAOne.csproj.CopyComplete
 C:\Users\donal\codingstuff\source\repos\MIS321\UAMIS321-PA3\obj\Debug\net5.0\PAOne.genruntimeconfig.cache
+C:\Users\donal\codingstuff\source\repos\MIS321\UAMIS321-PA3\bin\Debug\net5.0\System.Data.SQLite.dll
+C:\Users\donal\codingstuff\source\repos\MIS321\UAMIS321-PA3\bin\Debug\net5.0\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\Users\donal\codingstuff\source\repos\MIS321\UAMIS321-PA3\bin\Debug\net5.0\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Users\donal\codingstuff\source\repos\MIS321\UAMIS321-PA3\bin\Debug\net5.0\runtimes\win-x64\native\SQLite.Interop.dll
+C:\Users\donal\codingstuff\source\repos\MIS321\UAMIS321-PA3\bin\Debug\net5.0\runtimes\win-x86\native\SQLite.Interop.dll

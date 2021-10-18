@@ -20,7 +20,6 @@ namespace UAMIS321_PA3.database
                 using var cmd = new MySqlCommand(stm, con);
 
                 cmd.ExecuteNonQuery();
-
         }
 
         void ISavePost.savePost(Post myPost)

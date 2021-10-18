@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ZfqRlA4AU+2SFl5NI8rE9sPhoNwpn5KinQXxz8SNju+8NI6WfqL0F/XAF+pBN4IswErZHGqiGZgBkkjNN54Awg==",
+  "dgSpecHash": "ldsMoQHj67ywDzbTXT0vZtIpRu69r9TcbZDZmiCf019gtsZ9ETsmkGk13Ycb1PpPinYgGoTucJfLNRcGYt4lNQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\donal\\codingstuff\\source\\repos\\MIS321\\UAMIS321-PA3\\PAOne.csproj",
   "expectedPackageFiles": [
@@ -12,8 +12,10 @@
     "C:\\Users\\donal\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\donal\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\donal\\.nuget\\packages\\mysql.data\\8.0.26\\mysql.data.8.0.26.nupkg.sha512",
+    "C:\\Users\\donal\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.115\\stub.system.data.sqlite.core.netstandard.1.0.115.nupkg.sha512",
     "C:\\Users\\donal\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\donal\\.nuget\\packages\\system.configuration.configurationmanager\\4.4.1\\system.configuration.configurationmanager.4.4.1.nupkg.sha512",
+    "C:\\Users\\donal\\.nuget\\packages\\system.data.sqlite.core\\1.0.115\\system.data.sqlite.core.1.0.115.nupkg.sha512",
     "C:\\Users\\donal\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
     "C:\\Users\\donal\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\donal\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
