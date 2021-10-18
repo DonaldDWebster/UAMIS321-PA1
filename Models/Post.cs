@@ -1,4 +1,6 @@
 using UAMIS321_PA3.database;
+using System;
+
 
 namespace UAMIS321_PA3.Models
 {
@@ -8,8 +10,8 @@ namespace UAMIS321_PA3.Models
 
         public string PostText{get; set;}
 
-        public long TimeStamp{get; set;}
-
+        public DateTime TimeStamp{get; set;}
+ 
         public ISavePost Save{get; set;}
 
         public Post()
@@ -23,10 +25,10 @@ namespace UAMIS321_PA3.Models
         }
 
         //this method is used in program.cs to sort the Array List of Posts by their TimeStamp into descedning order
-        public static int CompareByTimeStamp(Post x, Post y)
-        {
-            return  x.TimeStamp.CompareTo(y.TimeStamp) * -1  ;
-        }
+        // public static int CompareByTimeStamp(Post x, Post y)
+        // {
+        //     return  x.TimeStamp.CompareTo(y.TimeStamp) * -1  ;
+        // }
        
     }
 }

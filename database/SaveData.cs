@@ -18,12 +18,12 @@ namespace UAMIS321_PA3.database
             using var con = new MySqlConnection(cs);
             con.Open();
 
-            string stm =@"UPDATE books set Title = @Title, author = @author WHERE id = @id";
+            string stm =@"UPDATE posts set TimeStamp = @TimeStamp, PostText = @PostText WHERE PostId = @PostId";
 
             using var cmd = new MySqlCommand(stm, con);
-            cmd.Parameters.AddWithValue("@id",value.PostID);
-            cmd.Parameters.AddWithValue("@author",value.PostText);
-            cmd.Parameters.AddWithValue("@Title",value.PostText);
+            cmd.Parameters.AddWithValue("@PostID",value.PostID);
+            cmd.Parameters.AddWithValue("@TimeStamp",value.TimeStamp);
+            cmd.Parameters.AddWithValue("@PostText",value.PostText);
            cmd.Prepare();
            cmd.ExecuteNonQuery();
         }
@@ -39,34 +39,34 @@ namespace UAMIS321_PA3.database
             con.Open();
 
             //convert this to posts
-            string stm ="DROP TABLE IF EXISTS books";
+            string stm ="DROP TABLE IF EXISTS posts";
 
             using var cmd = new MySqlCommand(stm, con);
 
             cmd.ExecuteNonQuery();
 
             //CONVERT THIS TO POSTS. Do i need to swithc cmd.CommandText to stm or something
-            cmd.CommandText = @"CREATE TABLE books(id INTEGER PRIMARY KEY AUTO_INCREMENT, title TEXT, author TEXT)";
+            cmd.CommandText = @"CREATE TABLE posts(PostId INTEGER PRIMARY KEY AUTO_INCREMENT, PostText TEXT, TimeStamp TEXT)";
             cmd.ExecuteNonQuery(); 
 
-            cmd.CommandText = @"INSERT INTO books(title,author) VALUES(@title,@author)";
-            cmd.Parameters.AddWithValue("@Title", "MistBorn");
-            cmd.Parameters.AddWithValue("@author", "Brandon Sanderson");
+            cmd.CommandText = @"INSERT INTO posts(PostText,TimeStamp) VALUES(@PostText,@TimeStamp)";
+            cmd.Parameters.AddWithValue("@PostText", "I am currently in Musth, please stay away");
+            cmd.Parameters.AddWithValue("@TimeStamp", "10-16-2000");
             cmd.Prepare();
             cmd.ExecuteNonQuery();
 
-            //THE PART BELOW IS BROKE, TRY TO FIX LATER
+         
             cmd.Parameters.Clear();
-            cmd.CommandText = @"INSERT INTO books(title,author) VALUES(@title,@author)";
-            cmd.Parameters.AddWithValue("@Title", "Flatland");
-            cmd.Parameters.AddWithValue("@author", "Edwin Abbott");
+            cmd.CommandText = @"INSERT INTO posts(PostText,TimeStamp) VALUES(@PostText,@TimeStamp)";
+            cmd.Parameters.AddWithValue("@PostText", "RAWRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR");
+            cmd.Parameters.AddWithValue("@TimeStamp", "10-31-2000");
             cmd.Prepare();
             cmd.ExecuteNonQuery();
 
-             cmd.Parameters.Clear();
-            cmd.CommandText = @"INSERT INTO books(title,author) VALUES(@title,@author)";
-            cmd.Parameters.AddWithValue("@Title", "Imperial Sunrise");
-            cmd.Parameters.AddWithValue("@author", "Hirohito Minimito");
+            cmd.Parameters.Clear();
+            cmd.CommandText = @"INSERT INTO posts(PostText,TimeStamp) VALUES(@PostText,@TimeStamp)";
+            cmd.Parameters.AddWithValue("@PostText", "Hey Kids! Come to the game tomorrow");
+            cmd.Parameters.AddWithValue("@TimeStamp", "11-15-2000");
             cmd.Prepare();
             cmd.ExecuteNonQuery();
 

@@ -15,7 +15,7 @@ namespace UAMIS321_PA3.database
                 using var con = new MySqlConnection(cs);
                 con.Open();
 
-                string stm = @"CREATE TABLE books(id INTEGER PRIMARY KEY AUTO_INCREMENT, title TEXT, author TEXT)";
+                string stm = @"CREATE TABLE Post(PostId INTEGER PRIMARY KEY AUTO_INCREMENT, PostText TEXT, TimeStamp TEXT)";
 
                 using var cmd = new MySqlCommand(stm, con);
 
@@ -34,12 +34,12 @@ namespace UAMIS321_PA3.database
             using var con = new MySqlConnection(cs);
             con.Open();
 
-            string stm = @"INSERT INTO books(title, author) VALUES(@title, @author)";
+            string stm = @"INSERT INTO posts(PostText, TimeStamp) VALUES(@PostText, @TimeStamp)";
 
             using var cmd = new MySqlCommand(stm, con);
 
-            cmd.Parameters.AddWithValue("@title", myPost.PostID);
-            cmd.Parameters.AddWithValue("@author", myPost.PostText);
+            cmd.Parameters.AddWithValue("@PostText", myPost.PostText);
+            cmd.Parameters.AddWithValue("@TimeStamp", myPost.TimeStamp);
 
             cmd.Prepare();
 
