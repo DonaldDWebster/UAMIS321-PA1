@@ -1,8 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using UAMIS321_PA3.Models;
 
-namespace PAOne
+namespace UAMIS321_PA3
 {
     public class PostFile
     {

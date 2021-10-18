@@ -1,4 +1,6 @@
-namespace PAOne
+using UAMIS321_PA3.database;
+
+namespace UAMIS321_PA3.Models
 {
     public class Post
     {
@@ -7,6 +9,13 @@ namespace PAOne
         public string PostText{get; set;}
 
         public long TimeStamp{get; set;}
+
+        public ISavePost Save{get; set;}
+
+        public Post()
+        {
+            Save = new SavePost();
+        }
 
         public override string ToString()
         {

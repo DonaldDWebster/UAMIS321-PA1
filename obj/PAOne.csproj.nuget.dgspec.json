@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\donal\\codingstuff\\source\\repos\\MIS321\\PAOne\\PAOne.csproj": {}
+    "C:\\Users\\donal\\codingstuff\\source\\repos\\MIS321\\UAMIS321-PA3\\PAOne.csproj": {}
   },
   "projects": {
-    "C:\\Users\\donal\\codingstuff\\source\\repos\\MIS321\\PAOne\\PAOne.csproj": {
+    "C:\\Users\\donal\\codingstuff\\source\\repos\\MIS321\\UAMIS321-PA3\\PAOne.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\donal\\codingstuff\\source\\repos\\MIS321\\PAOne\\PAOne.csproj",
+        "projectUniqueName": "C:\\Users\\donal\\codingstuff\\source\\repos\\MIS321\\UAMIS321-PA3\\PAOne.csproj",
         "projectName": "PAOne",
-        "projectPath": "C:\\Users\\donal\\codingstuff\\source\\repos\\MIS321\\PAOne\\PAOne.csproj",
+        "projectPath": "C:\\Users\\donal\\codingstuff\\source\\repos\\MIS321\\UAMIS321-PA3\\PAOne.csproj",
         "packagesPath": "C:\\Users\\donal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\donal\\codingstuff\\source\\repos\\MIS321\\PAOne\\obj\\",
+        "outputPath": "C:\\Users\\donal\\codingstuff\\source\\repos\\MIS321\\UAMIS321-PA3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\donal\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -37,6 +37,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "mysql.data": {
+              "target": "Package",
+              "version": "[8.0.26, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
